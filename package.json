@@ -1,0 +1,19 @@
+{
+  "name": "signum-giveaway-contract",
+  "version": "1.0.0",
+  "description": "A smart contract for giveaways of Signa. Tools included",
+  "main": "index.js",
+  "repository": "git@github.com:ohager/signum-giveaway-contract.git",
+  "author": "ohager <oliver@devbutze.com>",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=16"
+  },
+  "dependencies": {
+    "@signumjs/contracts": "^1.0.0-rc.65",
+    "@signumjs/core": "^1.0.0-rc.65",
+    "@signumjs/util": "^1.0.0-rc.65",
+    "inquirer": "^9.1.5"
+  }
+}
