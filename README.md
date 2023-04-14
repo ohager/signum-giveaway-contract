@@ -67,3 +67,15 @@ This stops the Give Away session, as the contracts balance will be send to the c
 Parameters:
 - Network: Obvious the network selection
 - Contract Id: The id of the contract
+
+
+## Contract 
+
+[Source code](https://github.com/ohager/signum-giveaway-contract/blob/main/contract/claimContract.smart.c) 
+
+```
+Activation Costs: 0.25 SIGNA
+Machine Code Hash: 14708020252986460043
+Full Hash Reference MainNet: 
+Full Hash Reference TestNet: 920BF14AB0AD3A462FF50341E7EBCF09933EBD16D4718F42651063C6EC406F06 
+```
