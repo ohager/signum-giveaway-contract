@@ -47,7 +47,7 @@ When selected "Create" you can deploy a new contract. A small dialog will ask yo
 - Amount: Defines the amount that shall be sent per claim. This cannot be changed afterwards!
 - Name: Give it a name according to your event
 - Alias: You can reference an alias. Using an alias may allow you to provide additional meta information people can follow, like a home page, more detailed description etc.
-  > The Alias should be follow the [SRC44](https://github.com/signum-network/SIPs/blob/master/SIP/sip-44.md) spec - you can generate it using Phoenix Wallet (Alias Section)
+  > The Alias should follow the [SRC44](https://github.com/signum-network/SIPs/blob/master/SIP/sip-44.md) spec - you can generate it using Phoenix Wallet (Alias Section)
 
 #### Charge Contract
 
