@@ -6,6 +6,7 @@ import {LedgerNodeUrls, ContractConstants} from "./helper/constants.mjs";
 import {confirmTransaction} from "./helper/confirmTransaction.mjs";
 import {handleError} from "./helper/handleError.mjs";
 import {printTaskHeader} from "./helper/printTaskHeader.mjs";
+import {Address} from "@signumjs/core";
 
 const DefaultName = "GiveAwayContract"
 
@@ -16,6 +17,7 @@ async function askParams() {
                 type: 'list',
                 name: 'ledger',
                 choices: ['TestNet', 'MainNet'],
+                message: "Which network?",
                 default: 'TestNet',
             },
             {
@@ -63,8 +65,12 @@ async function publish(params) {
             description: mountSRC44Description(params)
         })
 
-        console.info('Call successful - tx id:', transaction.transaction)
-        console.info('tx hash:', transaction.fullHash)
+        console.info("🎉 Contract successfully published")
+        console.info("==================================")
+        console.info('Transaction full hash', transaction.fullHash)
+        console.info('The contract Id will be:', transaction.transaction)
+        console.info('The contract address will be:', Address.fromNumericId(transaction.transaction).getReedSolomonAddress(false))
+
     } catch (e) {
         // If the API returns an exception,
         // the return error object is of type HttpError

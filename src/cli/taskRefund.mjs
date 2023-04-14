@@ -15,6 +15,7 @@ async function askParams() {
                 name: 'ledger',
                 choices: ['TestNet', 'MainNet'],
                 default: 'TestNet',
+                message: "Which network?",
             },
             {
                 type: 'input',
@@ -58,7 +59,9 @@ async function publish(params) {
             deadline: 60,
         })
 
-        console.info('Call successful - tx id:', transaction.transaction)
+        console.info("🔚 Contract successfully stopped (Refund)")
+        console.info("==================================")
+        console.info('tx id:', transaction.transaction)
         console.info('tx hash:', transaction.fullHash)
     } catch (e) {
         handleError(e);
