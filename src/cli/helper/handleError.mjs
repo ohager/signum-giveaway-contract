@@ -1,5 +1,6 @@
-const {HttpError} = require("@signumjs/http");
-const handleError = e => {
+import {HttpError} from "@signumjs/http";
+
+export const handleError = e => {
     if (e instanceof HttpError) {
         console.error('Oh oh, something went wrong:',
             e.message,
@@ -10,5 +11,3 @@ const handleError = e => {
         console.error('Oh oh, something went wrong:', e)
     }
 };
-
-module.exports = handleError;

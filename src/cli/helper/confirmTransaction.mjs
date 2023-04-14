@@ -1,9 +1,9 @@
-const inquirer = require("inquirer");
+import inquirer from "inquirer";
 
 /**
  * This method asks for the users passphrase as confirmation for the transaction
  */
-module.exports = async function confirmTransaction(params) {
+export async function confirmTransaction(params) {
 
     console.info("These are your parameters", JSON.stringify(params, null, `\t`))
 
